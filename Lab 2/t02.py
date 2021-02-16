@@ -18,6 +18,5 @@ print('Converting....')
 #Converting Celsius to fahrenheit
 celsius = ((fahrenheit - FREEZE_FAHRENHEIT) * 5 ) // 9
 
-
-
+#print statement 
 print("{:.0f} degrees fahrenheit is {:.0f} degrees celsius when converted.".format(fahrenheit,celsius))

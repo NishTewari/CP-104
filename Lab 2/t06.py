@@ -1,7 +1,7 @@
 """
 ------------------------------------------------------------------------
 A simple program to calculate the monthly payment for a mortgage.
-Mortgage equation m = (i(1 + i)^n) / (i + i)^n - 1
+Mortgage equation m = p [(i(1 + i)^n) / (i + i)^n - 1]
 ------------------------------------------------------------------------
 Author: Nish Tewari 
 ID:     190684430

@@ -9,7 +9,7 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-15"
 ------------------------------------------------------------------------
 """
-#CONSTANTS --> Pricing from the business
+#CONSTANTS --> Business Pricing
 LARGE_DOG_COST = 75.00
 SMALL_DOG_COST = 50.00 
 

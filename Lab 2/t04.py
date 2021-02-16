@@ -15,7 +15,7 @@ first_denominator = int(input("First denominator: "))
 second_numerator = int(input("Second numerator: "))
 second_denominator = int(input("Second denominator: "))
 
-#creating the formula 
+#fraction multiplication formula 
 product = (first_numerator/first_denominator) * (second_numerator/ second_denominator)
 
 #final print statement to showcase the answer

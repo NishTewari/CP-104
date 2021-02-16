@@ -10,7 +10,6 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-16"
 ------------------------------------------------------------------------
 """
-
 #Variables 
 num_flyers = int(input("Number of flyers: "))
 num_volunteers = int (input("Number of volunteers: "))

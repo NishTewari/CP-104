@@ -7,7 +7,7 @@ the height of the cylinder (cm)
 the cost of the material ($ per square cm)
 number of containers to produce
 
-Calculate the surface area of the container
+Calculate the surface area of the container.
 ------------------------------------------------------------------------
 Author: Nish Tewari 
 ID:     190684430

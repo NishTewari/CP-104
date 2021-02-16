@@ -1,7 +1,7 @@
 """
 ------------------------------------------------------------------------
 A program to calculate the BMI(Body Mass Index) and BMI'(BMI Prime) for 
-a user
+a user.
 BMI: user mass(kg)/user height(m)^2
 BMI': user BMI/user BMI upper limit
 ------------------------------------------------------------------------

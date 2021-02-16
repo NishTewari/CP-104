@@ -5,7 +5,7 @@ A simple program to convert fahrenheit temperature to celsius
 Author: Nish Tewari 
 ID:     190684430
 Email:  tewa4430@mylaurier.ca 
-__updated__ = "2021-02-15"
+__updated__ = "2021-02-16"
 ------------------------------------------------------------------------
 """
 

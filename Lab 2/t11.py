@@ -1,7 +1,7 @@
 """
 ------------------------------------------------------------------------
 A program that asks the user to enter the projected amount of total 
-sales and then displays the profit that is made from that amount
+sales and then displays the profit that is made from that amount.
 ------------------------------------------------------------------------
 Author: Nish Tewari 
 ID:     190684430

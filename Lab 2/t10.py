@@ -10,8 +10,7 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-16"
 ------------------------------------------------------------------------
 """
-
-#variables
+#Variables
 food_charge = float(input("Food Charge: $"))
 sales_tax = float(input("Sales Tax in (%): "))
 meal_tip = float(input("Tip in (%): "))

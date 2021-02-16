@@ -5,7 +5,7 @@ Calculating the user's pay with salary and bonus
 Author: Nish Tewari 
 ID:     190684430
 Email:  tewa4430@mylaurier.ca 
-__updated__ = "2021-02-14"
+__updated__ = "2021-02-16"
 ------------------------------------------------------------------------
 """
 

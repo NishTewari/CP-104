@@ -177,4 +177,207 @@ def is_divisible(n, i, j):
             i and j, False otherwise (boolean)
     ------------------------------------------------------
     """
-    
+    #if the remainder between n/i & n/j is 0. This means that they are evenly divisble 
+    if n % i == 0 and n % j == 0:
+        result = True
+    else:
+        result = False
+    return result
+
+#Function for t07
+def get_pay(hourly_rate, hours_worked):
+    """
+    -------------------------------------------------------
+    Calculates an employee's net wage given hours and pay.
+    Each employee is paid 1.5 times their regular hourly rate for
+    all hours over 40. A tax amount of 3.625 percent of gross salary
+    is deducted.
+    Use: net_payment = get_pay(hourly_rate, hours_worked)
+    -------------------------------------------------------
+    Parameters:
+        hourly_rate - hourly rate of pay (float)
+        hours_worked - total hours worked (float)
+    Returns:
+        net_payment - description (float)
+    ------------------------------------------------------
+    """
+    #Constants
+    TAX_RATE = 0.03625
+    EXTRA_PAY = 1.5
+    FORTY = 40
+
+    #Checking if the employee has worked over forty hours 
+    if hours_worked > FORTY: 
+        #example: 20$hour, 45 hours 
+        #(20 * 40) + ((45 - 40)*1.5*20) --> hence the 5 extra hours will be the only hours receving the extra bonus :) 
+        total_before_tax = (hourly_rate * FORTY) + ((hours_worked - FORTY)*(EXTRA_PAY * hourly_rate))
+        net_payment = total_before_tax - (total_before_tax * TAX_RATE) # apply tax :(
+    else:
+        total_before_tax = (hours_worked * hourly_rate)  #Simply multiply the hours they worked by their hourly rate
+        net_payment = total_before_tax - (total_before_tax * TAX_RATE) # apply tax :(
+    return net_payment
+
+#Function for t08 
+def roman_numeral(n):
+    """
+    -------------------------------------------------------
+    Convert 1-10 to Roman numerals.
+    Use: numeral = roman_numeral(n)
+    -------------------------------------------------------
+    Parameters:
+        n - number to convert to Roman numerals (int)
+    Returns:
+        numeral - Roman numeral version of n, None if n 
+        is not between 1 and 10 inclusive. (str)
+    -------------------------------------------------------
+    """
+    #setting a condition so that numbers 1-10 convert to Roman Numerals  
+    if(n == 1):
+        numeral = "I"
+    elif(n == 2):
+        numeral = "II"
+    elif(n == 3):
+        numeral = "III"
+    elif(n == 4):
+        numeral = "IV"
+    elif(n == 5):
+        numeral = "V"
+    elif(n == 6):
+        numeral = "VI"
+    elif(n == 7): 
+        numeral = "VII"
+    elif(n == 8): 
+        numeral = "VIII"
+    elif(n == 9): 
+        numeral = "IX"
+    elif(n == 10):
+        numeral = "X"
+    else: 
+        numeral = None
+    return numeral
+
+#Function for t09
+def wind_speed(speed):
+    """
+    -------------------------------------------------------
+    description
+    Use: category = wind_speed(speed)
+    -------------------------------------------------------
+    Parameters:
+        speed - wind speed in km/hr (int >= 0)
+    Returns:
+        category - description of wind speed (str)
+    ------------------------------------------------------
+    """
+    if speed < 39:
+        category = "Breeze"
+    elif speed >= 39 and speed <= 61:
+        category = "Strong Wind"
+    elif speed >= 62 and speed <= 88:
+        category = "Gale Winds "
+    elif speed >= 89 and speed <= 117:
+        category = "Whole Gale"
+    elif speed > 117:
+        category = " Hurricane"
+    return category
+
+#Function for t10
+def richter(intensity):
+    """
+    -------------------------------------------------------
+    Determines damage level given earthquake intensity measured
+    on the Richter scale.
+    Use: result = richter(intensity)
+    -------------------------------------------------------
+    Parameters:
+        intensity - Richter scale number for severity of earthquake
+            (float >= 0)
+    Returns:
+        result - description of earthquake damage (str)
+    -------------------------------------------------------
+    """
+    if(intensity < 5):
+        result = "Little or no damage"
+    elif(intensity >= 5 and intensity < 5.5):
+        result = "Some damage"
+    elif(intensity >= 5.5 and intensity < 6.5):
+        result = "Serious damage: Walls may crack or fall"
+    elif(intensity >= 6.5 and intensity < 7.5):
+        result = "Disaster: houses and buildings may collapse"
+    else:
+        result = " Catastrophe: most buildings destroyed"
+    return (result)
+
+#Function for t11   
+def quadrant(x, y):
+    """
+    -------------------------------------------------------
+    Determines location on a plane of an x, y coordinate.
+    Use: location = quadrant(x, y)
+    -------------------------------------------------------
+    Parameters:
+        x - x coordinate on a Cartesian plane (float)
+        y - y coordinate on a Cartesian plane (float)
+    Returns:
+        location - name of: quadrant, axis, or origin of 
+        coordinate x, y (str)
+    -------------------------------------------------------
+    """
+    if x > 0 and y > 0:
+        location = 'Quadrant 1'
+    elif x < 0 and y > 0:
+        location = 'Quadrant 2'
+    elif x < 0 and y < 0:
+        location = 'Quadrant 3'
+    elif x > 0 and y < 0:
+        location = 'Quadrant 4' 
+    elif x == 0 and y == 0:
+        location = 'Origin'
+    elif x == 0:
+        location = 'Y-Axis'
+    else:
+        location = 'X-Axis'
+    return location
+
+#Functions for t12
+def pay_raise(status, years, salary):
+    """
+    -------------------------------------------------------
+    Calculates pay raises for employees. Pay raises are based on:
+    status: Full Time ('F)' or Part Time ('P')
+    and years of service
+    Raises are:
+        5% for full time >= 10 years service
+        1.5% for full time < 4 years service
+        3% for part time > 10 years service
+        1% for part time < 4 years service
+        2% for all others
+    Use: new_salary = pay_raise(status, years, salary)
+    -------------------------------------------------------
+    Parameters:
+        status - employment type (str - 'F' or 'P')
+        years - number of years employed (int > 0)
+        salary - current salary (float > 0)
+    Returns:
+        new_salary - employee's new salary (float).
+    -------------------------------------------------------
+    """
+    #Constants --> Salary raise percentage.
+    FULL_TEN = 5
+    FULL_FOUR = 1.5
+    PART_TEN_PLUS = 3
+    PART_FOUR = 1
+    OTHER = 2 
+
+    if status == 'F' and years >= 10:
+        new_salary = salary + (salary * (FULL_TEN/100))   #5% raise 
+    elif status == 'F' and years < 4:   
+        new_salary = salary + (salary * (FULL_FOUR/100))   #1.5% raise
+    elif status == 'P' and years > 10:
+        new_salary = salary + (salary * (PART_TEN_PLUS/100)) #3% raise
+    elif status == 'P' and years < 4:
+        new_salary = salary + (salary * (PART_FOUR/100))  #1% raise 
+    else: 
+        new_salary = salary + (salary * (OTHER/100))  #2% raise
+
+    return new_salary

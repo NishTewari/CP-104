@@ -9,7 +9,7 @@ __updated__ = "2021-03-02"
 -----------------------------------------------
 '''
 #Imports
-from q4 import CARB_CALO_MULTIPLYER, FAT_CALO_MULTIPLYER
+from q4 import CARB_CALO_MULTIPLIER, FAT_CALO_MULTIPLIER
 
 #t04
 def calculate_calories(fat_gram, carbs_gram):

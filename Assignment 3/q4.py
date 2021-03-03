@@ -41,7 +41,7 @@ def main():
     fat_calories, carb_calories = calculate_calories(fat_gram, carbs_gram)
     
     
-    print("\nTotal calories a total of {} [Fat calories: {:.2f} and Carb calories: {:.2f}]".format(fat_calories + carb_calories, fat_calories, carb_calories))
+    print("\nTotal calories a total of {}. [Fat calories: {:.2f} and Carb calories: {:.2f}]".format(fat_calories + carb_calories, fat_calories, carb_calories))
 
     
 main()

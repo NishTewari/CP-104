@@ -3,9 +3,9 @@
 A program to find the total cost of an item 
 based on the quantity
 -----------------------------------------------
-Author: Nishant Tewari
-ID: 190684430
-Email: tewa4430@mylaurier.ca
+Author: Nish Tewari
+ID:     190684430
+Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-16"
 -----------------------------------------------
 

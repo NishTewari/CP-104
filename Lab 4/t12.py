@@ -2,12 +2,11 @@
 -----------------------------------------------
 A program that converts celsisus to fahrenheit 
 -----------------------------------------------
-Author: Nishant Tewari
-ID: 190684430
-Email: tewa4430@mylaurier.ca
-__updated__ = "2019-10-01"
+Author: Nish Tewari
+ID:     190684430
+Email:  tewa4430@mylaurier.ca
+__updated__ = "2021-02-16"
 -----------------------------------------------
-
 '''
 # Imports
 from functions import c_to_f

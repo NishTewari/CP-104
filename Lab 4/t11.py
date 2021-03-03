@@ -3,12 +3,11 @@
 A program that calculates slope 
 slope = (y2 - y1)/(x2 - x1)
 -----------------------------------------------
-Author: Nishant Tewari
-ID: 190684430
-Email: tewa4430@mylaurier.ca
+Author: Nish Tewari
+ID:     190684430
+Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-16"
 -----------------------------------------------
-
 '''
 # Imports
 from functions import slope

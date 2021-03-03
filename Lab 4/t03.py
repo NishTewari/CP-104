@@ -4,11 +4,10 @@ Calculate the area of a circle
 given the radius
 -----------------------------------------------
 Author: Nish Tewari
-ID: 190684430
-Email: tewa4430@mylaurier.ca
+ID:     190684430
+Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-02-16"
 -----------------------------------------------
-
 '''
 #Imports 
 from functions import area

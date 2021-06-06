@@ -12,7 +12,6 @@ __updated__ = "2021-03-15"
 # Imports
 from q3_functions import num_day
 
-
 # User inputs a number between and 1 and 7 
 day_num = int(input("Please enter a number between 1 and 7: "))
 

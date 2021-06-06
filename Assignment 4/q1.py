@@ -12,7 +12,6 @@ __updated__ = "2021-03-15"
 # Imports
 from q1_functions import calc_federal_tax, calc_prov_tax
 
-
 # User inputs their income
 income = int(input("Enter your income: $"))
 

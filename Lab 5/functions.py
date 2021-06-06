@@ -379,5 +379,113 @@ def pay_raise(status, years, salary):
         new_salary = salary + (salary * (PART_FOUR/100))  #1% raise 
     else: 
         new_salary = salary + (salary * (OTHER/100))  #2% raise
-
     return new_salary
+
+#Function for t13
+def loan():
+    """
+    -------------------------------------------------------
+    An employee may qualify for a loan if they have worked for a
+    minimum of 5 years, and has a salary of $30,000 or more.
+    This function must ask for the years employed and the salary
+    as appropriate.
+    Use: qualified = loan()
+    -------------------------------------------------------
+    Returns:
+        qualified - True if employee qualifies for a loan,
+            False otherwise (boolean)
+    -------------------------------------------------------
+    """
+    year = int(input("Years Employed: "))
+    ann_sal = int(input("Annual Salary: "))
+
+    if year >= 5 and ann_sal >= 30000:
+        qualified = True
+    else: 
+        qualified = False 
+    return qualified
+
+#Function for t14
+def ticket():
+    """
+    -------------------------------------------------------
+    School play ticket price calculation.
+    Asks user for their age, and if necessary, if they are
+    a student at the school. Prices:
+        Infant (age < 3): $0
+        Senior (age >= 65): $4.00
+        Student (10 <= age < 18): $3.00
+            Student of this school: $1.00
+        Adult (18 <= age < 65): $5.00
+        Kid (3 <= age < 10): $2.00
+    Use: price = ticket()
+    -------------------------------------------------------
+    Returns:
+        price - the price of one ticket (float)
+    -------------------------------------------------------
+    """
+    INFANT = 3
+    SENIOR = 65
+
+    age = int(input("How old are you? "))
+
+    if age < INFANT: 
+        price = 0
+    elif age >= SENIOR: 
+        price = 4
+    elif age >= 10 and age < 18:
+        student = (input("Are you a student at this school? (Y/N): "))
+        if student == "Y":
+            price = 1
+        else: 
+            price = 3
+    elif age >= 18 and age < 65:
+        price = 5
+    else: 
+        price = 2 
+    
+    return price 
+
+
+#Function for t15
+def fast_food():
+    """
+    -------------------------------------------------------
+    Food order function.
+    Asks user for their order and if they want a combo, and if
+    necessary, what is the side order for the combo:
+    Prices:
+        Burger: $6.00
+        Wings: $8.00
+        Fries combo: add $1.50
+        Salad combo: add $2.00
+    Use: price = fast_food()
+    -------------------------------------------------------
+    Returns:
+        price - the price of one meal (float)
+    -------------------------------------------------------
+    """
+    BURGER = 6
+    WINGS = 8
+    FRIES = 1.5
+    SALAD = 2
+    
+    price = 0
+    
+    order_b = input("Order B - burger or W - wings: ")
+    combo = input("Make it a combo? (Y/N): ")
+    
+    if(order_b == 'B'):
+        price = BURGER
+    else: 
+        price = WINGS
+    if(combo == 'Y'):
+        add = input("Add  F - fries or S - salad: ")
+        if(add == 'F'):
+            price = price + FRIES
+        if(add == 'S'):
+            price = price + SALAD
+       
+    return price
+    
+

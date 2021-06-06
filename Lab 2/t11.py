@@ -10,7 +10,7 @@ __updated__ = "2021-02-16"
 ------------------------------------------------------------------------
 """
 #Constant 
-ANNUAL_PERCENT = 18 
+ANNUAL_PERCENT = 20
 
 #Variables 
 annual_sales = float(input("Enter projected annual sales: $"))

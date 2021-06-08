@@ -8,7 +8,6 @@ Email:  tewa4430@mylaurier.ca_
 _updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-# Imports
 from functions import magic_date
 
 print("Enter a date.")

@@ -8,7 +8,6 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-# Imports
 from functions import roman_numeral
 
 n = int(input("Enter a number from 1 to 10: "))

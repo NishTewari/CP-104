@@ -1,6 +1,6 @@
 '''
 -----------------------------------------------
-Lab Five, Task 9
+Lab Five, Task 13
 -----------------------------------------------
 Author: Nishant Tewari
 ID:     190684430
@@ -8,10 +8,8 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-from functions import wind_speed
+from functions import loan
 
-speed = int(input("Wind speed (km/h): "))
+loan = loan() 
 
-category = wind_speed(speed)
-
-print("Category: {}".format(category))
+print("Qualified for a loan: {}".format(loan)) 

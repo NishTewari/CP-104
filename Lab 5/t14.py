@@ -10,6 +10,6 @@ __updated__ = "2021-06-08"
 '''
 from functions import ticket 
 
-ticket = ticket() 
+tick = ticket() 
 
-print("Price: ${:.2f}".format(ticket)) 
+print("Price: ${:.2f}".format(tick)) 

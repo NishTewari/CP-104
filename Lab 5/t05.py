@@ -8,7 +8,6 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-# Imports
 from functions import is_leap
 
 year = (int(input("Enter a year (>0): ")))

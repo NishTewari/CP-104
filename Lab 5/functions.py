@@ -7,11 +7,7 @@ ID:     190684430
 Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-06"
 -----------------------------------------------
-
 '''
-#Constants
-
-
 #Function for t01
 def magic_date(day, month, year):
     """

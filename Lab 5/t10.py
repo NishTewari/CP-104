@@ -1,6 +1,6 @@
 '''
 -----------------------------------------------
-Lab Five, Task 14
+Lab Five, Task 10
 -----------------------------------------------
 Author: Nishant Tewari
 ID:     190684430
@@ -8,8 +8,11 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-from functions import ticket 
+# Imports
+from functions import richter
 
-ticket = ticket() 
+intensity = float(input("Richter Scale Number: "))
 
-print("Price: ${:.2f}".format(ticket)) 
+result = richter(intensity)
+
+print(result)

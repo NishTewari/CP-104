@@ -1,6 +1,6 @@
 '''
 -----------------------------------------------
-Lab Five, Task 14
+Lab Five, Task 15
 -----------------------------------------------
 Author: Nishant Tewari
 ID:     190684430
@@ -8,8 +8,9 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-from functions import ticket 
+# Imports
+from functions import fast_food
 
-ticket = ticket() 
+price = fast_food()
 
-print("Price: ${:.2f}".format(ticket)) 
+print("Price: ${:.2f}".format(price))

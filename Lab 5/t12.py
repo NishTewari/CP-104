@@ -1,6 +1,6 @@
 '''
 -----------------------------------------------
-Lab Five, Task 14
+Lab Five, Task 12
 -----------------------------------------------
 Author: Nishant Tewari
 ID:     190684430
@@ -8,8 +8,13 @@ Email:  tewa4430@mylaurier.ca
 __updated__ = "2021-06-08"
 -----------------------------------------------
 '''
-from functions import ticket 
+# Imports
+from functions import pay_raise
 
-ticket = ticket() 
+status = input("Status: ")
+years = int(input("Years: "))
+salary = float(input("Salary: "))
 
-print("Price: ${:.2f}".format(ticket)) 
+new_salary = pay_raise(status, years, salary)
+
+print("New Salary: ${:,.2f}".format(new_salary))

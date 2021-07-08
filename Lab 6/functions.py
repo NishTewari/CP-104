@@ -180,6 +180,14 @@ def draw_hollow_triangle(width, char):
         None
     ------------------------------------------------------
     """
+    for row in range(width):
+        for col in range(width):
+            if col == 0 or row == (width-1) or row == col:
+                print(char, end = "")
+            else:
+                print(end=" ")
+        print()
+    return None
 
 #Task 9 
 def bottles_of_beer(n):
@@ -297,7 +305,6 @@ def lumber(b_min, b_max, b_inc, h_min, h_max, h_inc):
         None
     ------------------------------------------------------
     """
-
     print('Base\tHeight\tCross_Sectional Area\tMoment of Inertia\tSection Modulus')    
     for i in range(b_min, b_max + 1, b_inc):
         for j in range(h_min, h_max + 1, h_inc): 
@@ -358,8 +365,10 @@ def statistics(n):
             maximum = first 
         
         if(next_val < minimum):
-            minimum = next_val 
+            minimum = next_val
+
         elif(next_val > maximum):
             maximum = next_val
+
     average = total / n
     return minimum, maximum, total, average 

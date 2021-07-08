@@ -106,18 +106,14 @@ def get_lotto_numbers(n, low, high):
         numbers - a list of unique random lottery numbers (list of int)
     -------------------------------------------------------
     """
-    rand_array = [randint(low,high) for i in range(0,n)]
-
     numbers = []
-
-    while rand_array:
-        min = rand_array[0]  # Set a min var at the start
-        for x in rand_array:
-            if x < min:      # check if any other element in list is smaller than the min
-                min = x      # if so then set min as new value 
-        numbers.append(min)
-        rand_array.remove(min)
-
+    
+    for i in range(n):
+        num = randint(low, high)
+        
+        while num in numbers:
+            num = randint(low, high)
+        numbers.append(num)
     return numbers
 
 #Task 6 
@@ -204,14 +200,18 @@ def linear_search(a, v):
         index - the index of the location of v in a, -1 if not found (int).
     -------------------------------------------------------
     """
-    index = 0
-    for elements in a: 
-        if v == elements:
-            return index
-        index += 1   
-    if v != elements:    
-        index = -1 
-        return index
+    index = -1
+    counter = 0
+   
+    while counter < len(a) and index == -1:
+        
+        if(a[counter] == v):
+            index = counter
+
+        counter += 1
+      
+    return index
+    
         
 #Task 9    
 def many_search(a, v):

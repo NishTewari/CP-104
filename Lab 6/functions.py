@@ -158,6 +158,13 @@ def draw_arrow(width, char):
         None
     ------------------------------------------------------
     """
+    for i in range(0, width + 1):
+        print(char * i)
+    for j in range(width - 1, 0, -1):
+        print(char * j)
+        
+    return None
+
 #Task 8
 def draw_hollow_triangle(width, char):
     """

@@ -61,11 +61,11 @@ def get_digit_name(n):
         name - matching digit, 0 = "zero", 9 = "nine" (str)
     -------------------------------------------------------
     """
-    digit_number = [1,2,3,4,5,6,7,8,9]
+    digit_names = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
-    for i in range(0,n):
-        name = digit_number[i]
-    
+    for i in range(0, n + 1):
+        name = digit_names[i]
+        
     return name
 
 #Task 4

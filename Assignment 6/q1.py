@@ -1,11 +1,11 @@
 '''
 -----------------------------------------------
-Assignment Six Question One
+A6 Question One
 -----------------------------------------------
 Author: Nishant Tewari
 ID:     190684430
 Email:  tewa4430@mylaurier.ca
-__updated__ = "2019-10-26"
+__updated__ = "2021-07-08"
 -----------------------------------------------
 '''
 from a6_functions import calc_profit

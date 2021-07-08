@@ -1,15 +1,13 @@
 '''
 -----------------------------------------------
-Question 4 
+A6 Question Four 
 -----------------------------------------------
 Author: Nishant Tewari
-ID: 190684430
-Email: tewa4430@mylaurier.ca
-__updated__ = "2021-06-30"
+ID:     190684430
+Email:  tewa4430@mylaurier.ca
+__updated__ = "2021-07-08"
 -----------------------------------------------
-
 '''
-
 from a6_functions import is_prime
 
 num = int(input("Enter a positive integer: "))

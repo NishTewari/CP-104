@@ -1,15 +1,13 @@
 '''
 -----------------------------------------------
-
+A6 Question Three
 -----------------------------------------------
 Author: Nishant Tewari
 ID: 190684430
 Email: tewa4430@mylaurier.ca
-__updated__ = "2019-10-26"
+__updated__ = "2021-07-08"
 -----------------------------------------------
-
 '''
-# Imports
 from a6_functions import factorial
 
 num = int(input("Enter a positive integer: "))

@@ -5,11 +5,9 @@ Assignment Six Functions
 Author: Nishant Tewari
 ID:     190684430
 Email:  tewa4430@mylaurier.ca
-__updated__ = "2021-06-30"
+__updated__ = "2021-07-08"
 -----------------------------------------------
-
 '''
-# Imports
 import math
 
 # Question 1

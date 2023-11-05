@@ -1,21 +1,21 @@
 """
 -------------------------------------------------------
-Lab/Assignment  Testing
+Lab 1 Testing
 -------------------------------------------------------
 Author:  Nish Tewari 
 ID:      190684430 
 Email:   tewa4430@mylaurier.ca 
-Version: 2021-05-12
+Last Edited: 2023-11-05
 -------------------------------------------------------
 """
 -------------------------------------------------------
 t04
-Please enter your name: Nish Tewari 
-Pleased to meet you, Nish Tewari 
--------------------------------------------------------
-
+Please enter your name: Nish 
+Pleased to meet you, Nish
 -------------------------------------------------------
 t06
-
+What is your job salary? 100000
+What is the bonus you receive from work? 20000
+Calculating your overall pay. Your pay is 120000 $
 -------------------------------------------------------
 
